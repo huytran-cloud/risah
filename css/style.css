@@ -143,9 +143,12 @@ button.btn {
 }
 
 .collapse {
-    height: 30rem;
+    height: 31.5rem;
 }
 /* ---------Navbar--------- */
+
+
+
 
 /* ---------Main Content---------- */
 
@@ -174,13 +177,34 @@ main .site-title .btn {
     background: var(--sky);
 }
 
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white) ;
+}
+
 /* Site title */
+
+/* ---------Blog Carousel------------ */
+
+main .blog {
+    background: url('../asset/Abract01.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 100vh;
+    width: 100%;
+}
+
+/* ---------Blog Carousel------------ */
 
 /* ---------Main Content---------- */
 
+
+
+
 /* ---------Viewport less then or equal to 750px------------ */
 
-@media only screen and (max-width:750px) {
+@media only screen and (max-width:768px) {
     .nav .nav-menu, .nav .nav-item {
         flex-direction: column;
     }
