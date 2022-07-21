@@ -1,0 +1,29 @@
+/* Noto_Sans font */
+@font-face {
+    font-family: Noto_Sans;
+    src: url(../fonts/Noto_Sans/NotoSans-Regular.ttf);
+}
+
+/* Fira_sans font */
+@font-face {
+    font-family: Fira_Sans;
+    src: url(../fonts/Fira_Sans/FiraSans-Regular.ttf);
+}
+
+/* IBM font */
+@font-face {
+    font-family: IBM;
+    src: url(../fonts/IBM_Plex_Sans/IBMPlexSans-Light.ttf);
+}
+
+/* Nunito font */
+@font-face {
+    font-family: Nunito;
+    src: url(../fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+
+/* Roboto font */
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto_Mono/static/RobotoMono-Light.ttf);
+}

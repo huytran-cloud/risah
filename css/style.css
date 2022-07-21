@@ -1,12 +1,35 @@
+@import url('../css/fonts.css');
+
 html, body {
     margin: 0%;
     box-sizing: border-box;
     overflow-x: hidden;
 }
 
+/* Variables */
+:root {
+    /* Theme colors */
+    --text-gray: #3f4954;
+    --text-light: #686666da;
+    --bg-color: #0f0f0f;
+    --white: #ffffff;
+    --midnight: #104f55;
+
+    /* Gradiant colors */
+    --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+
+    /* Theme font-family */
+    --Noto: 'Noto_Sans', cursive;
+    --Fira: 'Fira_Sans', cursive;
+    --IBM: 'IBM', cursive;
+    --Nunito: 'Nunito', cursive;
+    --Roboto: 'Roboto', cursive;
+}
+
 /* Mighty Commands */
 a {
     text-decoration: none;
+    color: var(--text-gray);
 }
 
 .flex-row {
@@ -18,6 +41,29 @@ a {
 ul {
     list-style-type: none;
 }
+
+h1 {
+    font-family: var(--Noto);
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-family: var(--Noto);
+}
+
+h3 {
+    font-family: var(--Roboto);
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Fira);
+    cursor: pointer;
+}
 /* Mighty Commands */
 
 /* ---------Navbar--------- */
@@ -25,14 +71,20 @@ ul {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 40vh;
+    min-height: 10vh;
     overflow: hidden;
+    transition: height 1s ease-in-out;
 }
 
 .nav .nav-brand a {
     font-size: 1.6rem;
     padding: 1rem 0;
     display: block;
+    font-family: var(--Nunito);
+}
+
+.nav .nav-brand a:hover {
+    color: #a1c4cf;
 }
 
 .nav .nav-menu {
@@ -48,9 +100,94 @@ ul {
     padding: 1.6rem 1rem;
     font-size: 1.1rem;
     position: relative;
+    font-family: var(--Noto);
+}
+
+.nav .nav-item .nav-link:hover {
+    background-color: var(--midnight);
+}
+
+.nav .nav-item .nav-link:hover a {
+    color: var(--white);
+}
+
+.nav .social i {
+    padding: 0 .2rem;
+}
+
+.nav .social i:hover {
+    color: #a1c4cf;
 }
 
 .nav .social {
     padding: 1.4rem 0;
 }
+
+.nav .toggle-menu {
+    position: absolute;
+    top: 0%;
+    width: 90%;
+    cursor: pointer;
+    display: none;
+}
+
+.nav .toggle-menu .toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+}
+
+.nav .toggle-menu .toggle-icons {
+    font-size: 1.4rem;
+    color: var(--text-gray);
+}
+
+.collapse {
+    height: 30rem;
+}
 /* ---------Navbar--------- */
+
+/* ---------Main Content---------- */
+
+/* Site title */
+
+main .site-title {
+    background: url('../asset/Background-image.png');
+    background-size: cover;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1,h3 {
+    margin: .3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+/* Site title */
+
+/* ---------Main Content---------- */
+
+/* ---------Viewport less then or equal to 750px------------ */
+
+@media only screen and (max-width:750px) {
+    .nav .nav-menu, .nav .nav-item {
+        flex-direction: column;
+    }
+
+    .nav .toggle-menu {
+        display: initial;
+    }
+}
+
+/* ---------Viewport less then or equal to 750px------------ */
