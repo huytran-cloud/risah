@@ -58,3 +58,8 @@ $(document).ready(function(){
     AOS.init();
 
 })
+
+// Alert popup function
+function alertFunc(){
+    alert("Chưa có LinkedIn và Google")
+}
