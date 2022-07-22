@@ -17,6 +17,9 @@
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="./css/all.css">
 
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="./css/aos.css">
+
 </head>
 
 <body>
@@ -72,10 +75,10 @@
         <!-- Site Title -->
 
         <section class="site-title">
-            <div class="site-background">
-                <h3>Một món quà từ tình yêu</h3>
-                <h1>RISAH BLOGS</h1>
-                <button class="btn">Khám phá</button>
+            <div class="site-background" >
+                <h3 data-aos="fade-up" data-aos-delay="200" data-aos-duration="500">Một món quà từ tình yêu</h3>
+                <h1 data-aos="fade-up" data-aos-delay="350" data-aos-duration="500">RISAH BLOGS</h1>
+                <button class="btn" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">Khám phá</button>
             </div>
         </section>
 
@@ -85,8 +88,11 @@
 
         <section>
             <div class="blog">
+                <!-- <section style="display: flex; justify-content: center;">
+                    <h1 style="color: var(--text-gray);">Một số bài viết nổi bật</h1>
+                </section> -->
                 <div class="container">
-                    <div class="owl-carousel owl-theme blog-post">
+                    <div class="owl-carousel owl-theme blog-post" data-aos="zoom-in" data-aos-duration="1000">
                         <div class="blog-content">
                             <img src="./asset/Blog-post/post-1.jpg" alt="post-1">
                             <div class="blog-title">
@@ -175,20 +181,22 @@
         <!------------------ Blog Carousel ----------------------->
 
         <!------------------ Site Contents ------------------------>
-        <section style="display: flex; justify-content: center;">
-                <h1 style="color: var(--text-gray);">Bài viết gần đây</h1>
-        </section>
+        <!-- <section style="display: flex; justify-content: center;">
+            <h1 style="color: var(--text-gray);">Bài viết gần đây</h1>
+        </section> -->
 
         <section class="container">
             <div class="site-content">
                 <div class="posts">
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                         <div class="post-image">
                             <div>
                                 <img src="./asset/Blog-post/blog1.png" alt="blog1" class="img">
                             </div>
                             <div class="post-info flex-row">
-                                <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                <span style="font-family: var(--IBM_Regular);"><i
+                                        class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                    2021</span>
                             </div>
                         </div>
                         <div class="post-title">
@@ -202,13 +210,15 @@
                     </div>
                     <hr>
 
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                         <div class="post-image">
                             <div>
                                 <img src="./asset/Blog-post/blog2.png" alt="blog1" class="img">
                             </div>
                             <div class="post-info flex-row">
-                                <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                <span style="font-family: var(--IBM_Regular);"><i
+                                        class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                    2021</span>
                             </div>
                         </div>
                         <div class="post-title">
@@ -222,13 +232,15 @@
                     </div>
                     <hr>
 
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                         <div class="post-image">
                             <div>
                                 <img src="./asset/Blog-post/blog3.png" alt="blog1" class="img">
                             </div>
                             <div class="post-info flex-row">
-                                <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                <span style="font-family: var(--IBM_Regular);"><i
+                                        class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                    2021</span>
                             </div>
                         </div>
                         <div class="post-title">
@@ -242,13 +254,15 @@
                     </div>
                     <hr>
 
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in-right" data-aos-delay="200" data-aos-duration="1000">
                         <div class="post-image">
                             <div>
                                 <img src="./asset/Blog-post/blog4.png" alt="blog1" class="img">
                             </div>
                             <div class="post-info flex-row">
-                                <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                <span style="font-family: var(--IBM_Regular);"><i
+                                        class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                    2021</span>
                             </div>
                         </div>
                         <div class="post-title">
@@ -265,91 +279,106 @@
 
                 <aside class="sidebar">
                     <div class="category">
-                        <h2>Danh mục</h2>
+                        <h2 data-aos="zoom-in-left" data-aos-delay="300" data-aos-duration="500">Danh mục</h2>
                         <ul class="category-list">
-                            <li class="list-items">
+                            <li class="list-items" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">
                                 <a href="#">Ứng dụng</a>
                                 <span>(05)</span>
                             </li>
-                            <li class="list-items">
+                            <li class="list-items" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">
                                 <a href="#">Công nghệ thông tin</a>
                                 <span>(05)</span>
                             </li>
-                            <li class="list-items">
+                            <li class="list-items" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">
                                 <a href="#">Lối sống</a>
                                 <span>(05)</span>
                             </li>
-                            <li class="list-items">
+                            <li class="list-items" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">
                                 <a href="#">Ẩm thực</a>
                                 <span>(05)</span>
                             </li>
-                            <li class="list-items">
+                            <li class="list-items" data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">
                                 <a href="#">Yêu em</a>
                                 <span>(99+)</span>
                             </li>
                         </ul>
                     </div>
                     <div class="popular-posts">
-                        <h2>Các bài viết nổi bật</h2>
-                        <div class="post-content">
-                            <div class="post-image">
+                        <h2 data-aos="zoom-in-left" data-aos-delay="200" data-aos-duration="500">Các bài viết nổi bật</h2>
+                        <div class="post-content" data-aos="flip" data-aos-delay="200" data-aos-duration="500">
+                            <div class="post-image" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
                                 <div>
                                     <img src="./asset/popular-post/m-blog-1.jpg" alt="blog4" class="img">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                    <span style="font-family: var(--IBM_Regular);"><i
+                                            class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                        2021</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa dlsajdiow</a>
+                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa
+                                    dlsajdiow</a>
                             </div>
 
-                            <div class="post-image">
+                            <div class="post-image" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
                                 <div>
                                     <img src="./asset/popular-post/m-blog-2.jpg" alt="blog3" class="img">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                    <span style="font-family: var(--IBM_Regular);"><i
+                                            class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                        2021</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa dlsajdiow</a>
+                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa
+                                    dlsajdiow</a>
                             </div>
 
-                            <div class="post-image">
+                            <div class="post-image" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
                                 <div>
                                     <img src="./asset/popular-post/m-blog-3.jpg" alt="blog1" class="img">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                    <span style="font-family: var(--IBM_Regular);"><i
+                                            class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                        2021</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa dlsajdiow</a>
+                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa
+                                    dlsajdiow</a>
                             </div>
 
-                            <div class="post-image">
+                            <div class="post-image" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
                                 <div>
                                     <img src="./asset/popular-post/m-blog-4.jpg" alt="blog1" class="img">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                    <span style="font-family: var(--IBM_Regular);"><i
+                                            class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                        2021</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa dlsajdiow</a>
+                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa
+                                    dlsajdiow</a>
                             </div>
 
-                            <div class="post-image">
+                            <div class="post-image" data-aos="flip-up" data-aos-delay="200" data-aos-duration="500">
                                 <div>
                                     <img src="./asset/popular-post/m-blog-5.jpg" alt="blog1" class="img">
                                 </div>
                                 <div class="post-info flex-row">
-                                    <span style="font-family: var(--IBM_Regular);"><i class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm 2021</span>
+                                    <span style="font-family: var(--IBM_Regular);"><i
+                                            class="fas fa-calendar-alt text-gray">&nbsp;&nbsp;</i>Ngày 3 tháng 6 năm
+                                        2021</span>
                                 </div>
                             </div>
                             <div class="post-title">
-                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa dlsajdiow</a>
+                                <a href="#">Lorem ipsum dolor abcxyz ajksldjwadoakjdsakj kasjdlajsd laskjdoiwa
+                                    dlsajdiow</a>
                             </div>
                         </div>
                         <button class="btn post-btn">Xem thêm &nbsp; <i class="fas fa-arrow-right"></i></button>
@@ -364,11 +393,70 @@
 
     <!------------------Main Site Section -------------------->
 
+
+    <!-- ----------Footer------------ -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us"  data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                <h2>Về chúng tôi</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque fuga officia reprehenderit
+                    molestias.
+                </p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200" data-aos-duration="500">
+                <h2>Nhận thông tin</h2>
+                <p>Nhận những thông tin mới nhất về chúng tôi qua email</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email">
+                    <span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
+                <h2>Instagram</h2>
+                <div class="flex-row">
+                    <img src="./asset/instagram/thumb-card3.png" alt="insta1">
+                    <img src="./asset/instagram/thumb-card4.png" alt="insta2">
+                    <img src="./asset/instagram/thumb-card5.png" alt="insta3">
+                </div>
+                <div class="flex-row">
+                    <img src="./asset/instagram/thumb-card6.png" alt="insta4">
+                    <img src="./asset/instagram/thumb-card7.png" alt="insta5">
+                    <img src="./asset/instagram/thumb-card8.png" alt="insta6">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200" data-aos-duration="500">
+                <h2>Theo dõi chúng tôi</h2>
+                <p>Theo dõi chúng tôi tại đây !</p>
+                <div>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-3x"></i></span>
+        </div>
+
+        <div class="rights flex-row">
+            <h4 class="text-gray">Đây là sản phẩm được tạo ra từ tình yêu của <a href="#" target="_blank">Cua</a> và <a href="#" target="_blank">Mee</a> 💖</h4>
+        </div>
+    </footer>
+
+    <!-- ----------Footer------------ -->
+
+
     <!-- jquery files -->
     <script src="./js/jQuery3.6.0.min.js"></script>
 
     <!-- Carousel JS -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="./js/aos.js"></script>
 
     <!-- Custom JS -->
     <script src="./js/main.js"></script>
