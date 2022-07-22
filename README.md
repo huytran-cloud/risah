@@ -1,1 +1,1 @@
-risah blog
+### Đây là một cục template được làm trong 3 ngày. Nó không có tác dụng gì cả. Respect vì đống CSS.
